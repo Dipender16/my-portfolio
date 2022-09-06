@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'carter': ["'Montserrat', sans-serif"],
+                    'roboto': ["'Roboto Mono', monospace"]
+
+                },
+                screens: {
+                    xm: "400px",
+                    sm: "550px",
+                    md: "800px",
+                    normal: "1100px",
+                    l: "1300px",
+                    xl: "1600px",
+                    xxl: "1880px",
+                },
+
+                extend: {
+                    backgroundImage: {
+                        bg: 'url(img/bg.png)',
+                    },
+                    width: {
+                        '43': '43%',
+                        '47': '47%',
+                        '320': '320px',
+                        '370': '370px',
+                        '470': '470px',
+                        '570': '570px',
+                        '670': '670px',
+                    },
+                    height: {
+                        '270': '270px',
+                        '370': '370px',
+                        '570': '570px',
+                        '630': '630px',
+                        '700': '700px',
+                        '800': '800px',
+                    },
+                    colors: {
+                        pageBg: '#1b1b1b',
+                        section2Bg: '#212121',
+                        yellow: '#ffc000',
+                        blue: '#5682f7',
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        
+    </script>
+</head>
+<body class="bg-bg">
+    <header class="flex justify-between fixed w-full bg-bg p-6 sm:px-10 md:px-20 normal:px-32 md:pb-0  items-center">
+        <img class="w-10 md:w-14 normal:w-20 " src="img/logo1.png" alt="">
+        <ul class=" hidden sm:flex items-center gap-8 md:gap-12 normal:gap-14">
+            <a href="#projects"> <li class="text-white font-carter text-sm md:text-base normal:text-2xl hover:underline hover:underline-offset-8 cursor-pointer">Projects</li></a>
+            <a href="#skills"><li class="text-white font-carter text-sm md:text-base normal:text-2xl hover:underline hover:underline-offset-8 cursor-pointer">Skills</li></a>
+           
+            <a href="#hireme"> <li class="text-white font-carter text-sm md:text-base normal:text-2xl hover:underline hover:underline-offset-8 cursor-pointer">Hire me</li></a>
+        </ul>
+        <span class="text-slate-200 sm:hidden hover:text-white material-symbols-outlined">
+            menu
+            </span>
+    </header>
+
+    <!-- section1 -->
+    <section class="flex flex-col md:flex-row justify-center items-center md:items-center sm:items-start pt-20 md:pt-28 xl:px-40">
+        <img class="w-full md:w-3/6" src="img/play.gif" alt="">
+        <div class="w-6/6 md:w-3/6 sm:pl-12 md:pl-0">
+            <p class="text-center sm:text-left font-carter text-slate-300 text-5xl sm:text-6xl md:text-6xl normal:text-7xl xl:text-8xl"><span class="text-3xl sm:text-4xl normal:text-5xl"> Hi,</span> <br> I'm <span class="text-blue font-bold"> Dipender </span></p> 
+            <p class="text-center mt-2 sm:text-left font-carter text-slate-300 text-2xl sm:text-4xl ">a Web Developer</p>
+
+            <p class="text-slate-100 text-center sm:text-left px-10 sm:pl-0 my-8 md:mt-3 text-lg sm:text-xl l:pr-48 font-carter">with the focus on MERN stack, and still exploring other technologies and frameworks that catch my interest! if you're looking for a developer to add in your team, then I'd love to hear from you!</p>
+        </div>
+    </section>
+    
+    <!-- section2 -->
+    <section id="projects" class="pt-20 sm:pt-32">
+        <h1 class="text-white text-center text-4xl sm:text-5xl md:text-6xl text-slate-300 sm:mb-3 md:mb-6 ">Projects <br> <span class="text-sm sm:text-base md:text-2xl text-blue font-roboto font-thin">{ some of my work }</span> </h1>
+
+        <div class="flex justify-center flex-wrap l:px-14">
+            
+            <div class="bg-section2Bg  rounded-2xl p-2  m-5 w-fit hover:border hover:border-slate-700 cursor-pointer border border-transparent">
+                <img class="w-96 rounded-lg" src="img/rode.png" alt="" srcset="">
+                <p class="text-center text-slate-300 font-carter text-2xl mt-3">Rode clone</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">Created with HTML & tailwind CSS</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">For : All devices</p>
+                <div>
+                    <a href="https://dipender16.github.io/rode/"><button class="text-blue hover:text-white hover:bg-blue flex items-center mx-auto mt-5 pt-1 pb-1 px-4 rounded-lg text-sm border-solid border border-slate-700">Deployed ink</button></a>
+                </div>
+            </div>
+            
+            
+            <div class="bg-section2Bg  rounded-2xl p-2  m-5 w-fit hover:border hover:border-slate-700 cursor-pointer border border-transparent">
+                <img class="w-96 rounded-lg" src="img/shopify.png" alt="" srcset="">
+                <p class="text-center text-slate-300 font-carter text-2xl mt-3">Shopify clone</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">Created with HTML & tailwind CSS</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">For : All devices</p>
+                <div>
+                    <a href="https://dipender16.github.io/shopify/"><button class="text-blue hover:text-white hover:bg-blue flex items-center mx-auto mt-5 pt-1 pb-1 px-4 rounded-lg text-sm border-solid border border-slate-700">Deployed ink</button></a>
+                </div>
+            </div>
+            
+            
+            <div class="bg-section2Bg  rounded-2xl p-2  m-5 w-fit hover:border hover:border-slate-700 cursor-pointer border border-transparent">
+                <img class="w-96 rounded-lg" src="img/paytm.png" alt="" srcset="">
+                <p class="text-center text-slate-300 font-carter text-2xl mt-3">Paytm clone</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">Created with HTML & tailwind CSS</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">For : All devices</p>
+                <div>
+                    <a href="https://dipender16.github.io/paytm/"><button class="text-blue hover:text-white hover:bg-blue flex items-center mx-auto mt-5 pt-1 pb-1 px-4 rounded-lg text-sm border-solid border border-slate-700">Deployed ink</button></a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="bg-section2Bg  rounded-2xl p-2  m-5 w-fit hover:border hover:border-slate-700 cursor-pointer border border-transparent">
+                <img class="w-96 rounded-lg" src="img/designer.png" alt="" srcset="">
+                <p class="text-center text-slate-300 font-carter text-2xl mt-3">Product Design LandingPage</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">Created with HTML & CSS</p>
+                <p class="text-center text-slate-300 font-carter text-sm mt-2">For : All devices</p>
+                <div>
+                    <a href="https://dipender16.github.io/Assignment-15/"><button class="text-blue hover:text-white hover:bg-blue flex items-center mx-auto mt-5 pt-1 pb-1 px-4 rounded-lg text-sm border-solid border border-slate-700">Deployed ink</button></a>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </section>
+
+    <section id="skills" class="pt-20 sm:pt-32">
+        <h1 class="text-white text-center text-4xl sm:text-5xl md:text-6xl text-slate-300 sm:mb-3 md:mb-6 ">Skills <br> <span class="text-sm sm:text-base md:text-2xl text-blue font-roboto font-thin">{ some of my skills & learning more;}</span> </h1>
+
+        <div class="flex justify-center flex-wrap l:px-14">
+            <div class="m-8 hover:border hover:border-slate-700 cursor-pointer w-60 flex flex-col items-center justify-center bg-section2Bg rounded-2xl p-10">
+                <img class="w-24" src="img/html.png" alt="">
+                <p class="text-center text-slate-200 font-carter mt-5 text-2xl font-semibold">HTML</p>
+            </div>
+            
+            <div class="m-8 hover:border hover:border-slate-700 cursor-pointer w-60 flex flex-col items-center justify-center bg-section2Bg rounded-2xl p-10">
+                <img class="w-24" src="img/css.png" alt="">
+                <p class="text-center text-slate-200 font-carter mt-5 text-2xl font-semibold">CSS</p>
+            </div>
+            
+            <div class="m-8 hover:border hover:border-slate-700 cursor-pointer w-60 flex flex-col items-center justify-center bg-section2Bg rounded-2xl p-10">
+                <img class="w-24" src="img/js.png" alt="">
+                <p class="text-center text-slate-200 font-carter mt-5 text-2xl font-semibold">JAVA SCRIPT</p>
+            </div>
+            
+            <div class="m-8 hover:border hover:border-slate-700 cursor-pointer w-60 flex flex-col items-center justify-center bg-section2Bg rounded-2xl p-10">
+                <img class="w-24" src="img/tailwind.png" alt="">
+                <p class="text-center text-slate-200 font-carter mt-5 text-2xl font-semibold">Tailwind</p>
+            </div>
+            
+            <div class="m-8 hover:border hover:border-slate-700 cursor-pointer w-60 flex flex-col items-center justify-center bg-section2Bg rounded-2xl p-10">
+                <img class="w-24" src="img/bootstrap.png" alt="">
+                <p class="text-center text-slate-200 font-carter mt-5 text-2xl font-semibold">Bootstrap</p>
+            </div>
+            
+
+
+        </div>
+    </section>
+
+    <section id="hireme">
+        <p class="text-white text-center text-4xl sm:text-5xl mt-20 md:mt-32 md:text-6xl text-slate-300 sm:mb-3 md:mb-6 ">Hire me <br> <span class="text-sm sm:text-base md:text-2xl text-blue font-roboto font-thin">{ Feel free to talk :-)}</span> </p>
+
+        <form action="" class="flex flex-col my-10 bg-section2Bg p-10 w-fit mx-auto rounded-3xl items-center justify-center px-8">
+            <input type="text" id="fName" class="px-4 py-2 mb-2 rounded-full font-carter text-black w-72 sm:w-96 md:w-570" placeholder="First name">
+            <input type="text" id="lName" class="px-4 py-2 mb-2 rounded-full font-carter text-black w-72 sm:w-96 md:w-570" placeholder="Last name">
+            <input type="number" id="lName" class="px-4 py-2 mb-2 rounded-full font-carter text-black w-72 sm:w-96 md:w-570" placeholder="Contact No.">
+            <input type="email" id="lName" class="px-4 py-2 mb-2 rounded-full font-carter text-black w-72 sm:w-96 md:w-570" placeholder="Email">
+            <div class="flex justify-between w-full mt-10 items-center ">
+                <button class="text-slate-300 hover:text-blue font-carter px-6 py-3  bg-blue hover:bg-bg rounded-full">Submit</button>
+                <button class="text-slate-300 hover:text-blue font-carter px-6 py-3  bg-blue hover:bg-bg rounded-full">Direct mail</button>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>
